@@ -10,22 +10,10 @@ yarn-error.log*
 .env
 .env.*
 
-# Archivos del sistema
+# Otros archivos comunes a ignorar
 .DS_Store
 Thumbs.db
 
-# Salidas de build / producción
+# Salidas de build (si usas alguna)
 dist/
 build/
-
-# Configuraciones de IDE
-.vscode/
-.idea/
-
-# Archivos de cache
-.cache/
-*.tmp
-
-# Otros archivos comunes a ignorar
-*.bak
-*.swp
