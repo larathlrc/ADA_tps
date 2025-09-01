@@ -235,4 +235,3 @@ for (let intento = 1; intento <= 3; intento++) { //++intento para incrementar de
 if (!adivinado) {
     console.log(`💔 Lo siento, no adivinaste. El número secreto era: ${numeroSecreto}`);
 }
-
