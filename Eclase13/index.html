@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejercicios JS</title>
+</head>
+<body>
+  <h1>Ejercicios de la clase 13</h1>
+  <p>Elegí el ejercicio que quieras ver</p>
+
+  <!-- Botones -->
+  <div>
+    <button onclick="cargarEjercicio('Ejercicio1.js')">Ejercicio 1</button>
+    <button onclick="cargarEjercicio('Ejercicio2.js')">Ejercicio 2</button>
+    <button onclick="cargarEjercicio('Ejercicio3.js')">Ejercicio 3</button>
+    <button onclick="cargarEjercicio('Ejercicio4.js')">Ejercicio 4</button>
+    <button onclick="cargarEjercicio('Ejercicio5.js')">Ejercicio 5</button>
+    <button onclick="cargarEjercicio('Ejercicio6.js')">Ejercicio 6</button>
+    <button onclick="cargarEjercicio('Ejercicio7.js')">Ejercicio 7</button>
+    <button onclick="cargarEjercicio('Ejercicio8.js')">Ejercicio 8</button>
+    <button onclick="cargarEjercicio('Ejercicio9.js')">Ejercicio 9</button>
+    <button onclick="cargarEjercicio('Ejercicio10.js')">Ejercicio 10</button>
+  </div>
+
+<script>
+    function cargarEjercicio(archivo) {
+      
+      document.querySelectorAll("script[data-ejercicio]").forEach(s => s.remove());
+
+      const script = document.createElement("script");
+      script.src = archivo;
+      script.setAttribute("data-ejercicio", "true");
+      document.body.appendChild(script); 
+
+      console.clear();
+      console.log(`Ejecutando: ${archivo}`);
+    }
+  </script>
+  
+</body>
+</html>
