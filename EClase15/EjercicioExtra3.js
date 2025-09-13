@@ -7,7 +7,7 @@ consola.
 2. Si el nombre del cliente es "VIP", muéstralo con prioridad indicando
 un mensaje especial.
 3. Al final, muestra cuántos clientes fueron atendidos en total.
-Lista inicial de clientes: ["Ana", "Carlos", "VIP", "Sofía", "Juan"]. .*/
+Lista inicial de clientes: ["Ana", "Carlos", "VIP", "Sofía", "Juan"].*/
 
 let clientes = ["Ana", "Carlos", "VIP", "Sofía", "Juan"];
 let clientesAtendidos = 0;
