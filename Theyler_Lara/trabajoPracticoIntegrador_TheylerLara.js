@@ -587,7 +587,7 @@ function menuPrincipal() {
                 const idBorrar = parseInt(prompt("Ingrese el ID del libro que desea borrar:"));
 
                 //Validamos la entrada del usuario. Si la entrada no es un número (por ejemplo, si ingresó texto o la canceló),
-                // mostramos un mensaje de error y salimos del 'case' para evitar problemas.
+                // mostramos un mensaje de error y salimos del "case" para evitar problemas.
                 if (isNaN(idBorrar)) {
                 console.log("❌ ID inválido. Por favor, ingrese un número.");
             break;
